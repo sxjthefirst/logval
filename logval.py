@@ -75,7 +75,7 @@ def sendMail(body):
 	message +="Subject: BadInstrumention Messages\n"
 	message += body
 	try:
-	   smtpObj = smtplib.SMTP('smtp-out.ca1.paypal.com')
+	   smtpObj = smtplib.SMTP('smtp-out.companyname.com')
 	   smtpObj.sendmail(sender, receivers, message)
 	   print "Successfully sent email"
 	except smtplib.SMTPException:
