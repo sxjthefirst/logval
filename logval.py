@@ -66,8 +66,8 @@ def download(url):
 	return localFile
 
 def sendMail(body):
-	sender = 'vbrugubanda@paypal.com'
-	sender = 'Brugubanda, Nagasai'
+	sender = 'logval@company.com'
+	sender = 'Log Validator'
 	receivers=email.split(",")
 	message ="From: " + sender +"\n"
 	recev=";".join(str for str in receivers)
